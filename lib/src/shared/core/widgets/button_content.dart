@@ -94,7 +94,8 @@ class _ButtonContentState extends State<ButtonContent> {
     final renderObject = _textKey.currentContext?.findRenderObject();
     if (renderObject != null) {
       final renderBox = renderObject as RenderBox;
-      _textWidth = renderBox.size.width;
+      // Disabled until https://github.com/flutter/flutter/issues/107397 is fixed
+      // _textWidth = renderBox.size.width;
     }
   }
 
@@ -116,7 +117,7 @@ class _ButtonContentState extends State<ButtonContent> {
   Widget _buildLinearProgressIndicator() {
     return Flexible(
       child: SizedBox(
-        width: _textWidth,
+        width: _textWidth ?? 48,
         child: LinearProgressIndicator(
           backgroundColor: widget.style.progressIndicatorColor,
           minHeight: widget.style.progressIndicatorStrokeWidth ?? 4.0,
