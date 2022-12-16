@@ -91,8 +91,11 @@ class _ButtonContentState extends State<ButtonContent> {
   }
 
   void getTextWidgetWidth() {
-    final renderBox = _textKey.currentContext?.findRenderObject() as RenderBox?;
-    _textWidth = renderBox?.size.width;
+    final renderObject = _textKey.currentContext?.findRenderObject();
+    if (renderObject != null) {
+      final renderBox = renderObject as RenderBox;
+      _textWidth = renderBox.size.width;
+    }
   }
 
   Widget _buildCircularProgressIndicator() {
