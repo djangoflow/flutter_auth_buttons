@@ -9,3 +9,5 @@ build/
 android
 ios
 .vscode
+.flutter-plugins
+.flutter-plugins-dependencies
