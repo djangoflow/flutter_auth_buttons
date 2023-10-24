@@ -597,63 +597,63 @@ class AuthButtonStyle with Diagnosticable {
     // @formatter:off
     super.debugFillProperties(properties);
     properties.add(DiagnosticsProperty<Color?>('buttonColor', buttonColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>('splashColor', splashColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<double?>('elevation', elevation,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<double?>('borderRadius', borderRadius,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<EdgeInsets?>('padding', padding,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(
-        DiagnosticsProperty<EdgeInsets?>('margin', margin, defaultValue: null));
+        DiagnosticsProperty<EdgeInsets?>('margin', margin, defaultValue: null),);
     properties.add(DiagnosticsProperty<TextStyle?>('textStyle', textStyle,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>('borderColor', borderColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<double?>('borderWidth', borderWidth,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<AuthButtonType?>(
         'buttonType', buttonType,
-        defaultValue: null));
+        defaultValue: null,),);
     properties
         .add(DiagnosticsProperty<double?>('width', width, defaultValue: null));
     properties.add(
-        DiagnosticsProperty<double?>('height', height, defaultValue: null));
+        DiagnosticsProperty<double?>('height', height, defaultValue: null),);
     properties.add(
-        DiagnosticsProperty<double?>('iconSize', iconSize, defaultValue: 30.0));
+        DiagnosticsProperty<double?>('iconSize', iconSize, defaultValue: 30.0),);
     properties.add(DiagnosticsProperty<double?>('separator', separator,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>('iconBackground', iconBackground,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<AuthIconType?>('iconType', iconType,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>('shadowColor', shadowColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>(
         'progressIndicatorColor', progressIndicatorColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>(
         'progressIndicatorValueColor', progressIndicatorValueColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<double?>(
         'progressIndicatorStrokeWidth', progressIndicatorStrokeWidth,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<double?>(
         'progressIndicatorValue', progressIndicatorValue,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<Color?>('iconColor', iconColor,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<AuthIndicatorType>(
         'progressIndicatorType', progressIndicatorType,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<VisualDensity?>(
         'visualDensity', visualDensity,
-        defaultValue: null));
+        defaultValue: null,),);
     properties.add(DiagnosticsProperty<MaterialTapTargetSize?>(
         'tapTargetSize', tapTargetSize,
-        defaultValue: null));
+        defaultValue: null,),);
     // @formatter:on
   }
 }
