@@ -58,7 +58,10 @@ class _ButtonContentState extends State<ButtonContent> {
   @override
   void initState() {
     super.initState();
-    if (widget.style.buttonType != AuthButtonType.icon) {
+    final AuthIndicatorType indicatorType =
+        widget.style.progressIndicatorType ?? AuthIndicatorType.circular;
+    if (widget.style.buttonType != AuthButtonType.icon &&
+        indicatorType == AuthIndicatorType.linear) {
       WidgetsBinding.instance.addPostFrameCallback((_) => getTextWidgetWidth());
     }
   }
@@ -106,9 +109,8 @@ class _ButtonContentState extends State<ButtonContent> {
     final RenderObject? renderObject =
         _textKey.currentContext?.findRenderObject();
     if (renderObject != null) {
-      // final RenderBox renderBox = renderObject as RenderBox;
-      // Disabled until https://github.com/flutter/flutter/issues/107397 is fixed
-      // _textWidth = renderBox.size.width;
+      final RenderBox? renderBox = renderObject as RenderBox?;
+      _textWidth = renderBox?.size.width;
     }
   }
 
